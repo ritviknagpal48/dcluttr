@@ -18,32 +18,28 @@
     <meta
       data-react-helmet="true"
       name="description"
-      content="Advertise better with AI-driven actionable insights - faster than ever before"
+      content="Get AI-driven actionable insights - faster than ever before"
     />
     <meta
       data-react-helmet="true"
       property="og:description"
-      content="Advertise better with AI-driven actionable insights - faster than ever before"
+      content="Get AI-driven actionable insights - faster than ever before"
     />
-    <meta
-      data-react-helmet="true"
-      property="og:logo"
-      content="https://www.dcluttr.ai/images_own/dcluttr_small_logo.png"
-    />
+    <meta data-react-helmet="true" property="og:logo" content="logo.png" />
     <meta
       data-react-helmet="true"
       property="og:image"
-      content="https://www.dcluttr.ai/images_own/og_tags.png"
+      content="./images_own/Overview_1.png"
     />
     <meta
       data-react-helmet="true"
       name="twitter:card"
-      content="https://www.dcluttr.ai/images_own/og_tags.png"
+      content="./images_own/Overview_1.png"
     />
     <meta
       data-react-helmet="true"
       name="twitter:image"
-      content="https://www.dcluttr.ai/images_own/og_tags.png"
+      content="./images_own/Overview_1.png"
     />
     <meta
       data-react-helmet="true"
@@ -247,7 +243,93 @@
           !0
         );
     </script>
+    <script>
+      (function () {
+        let gatsbyPluginSegmentReady = true;
+        function gatsbySegmentLoad(writeKey) {
+          if (window.analytics && window.analytics.load) {
+            window.analytics.load(writeKey);
+          }
+          gatsbyPluginSegmentReady = true;
+        }
 
+        (function () {
+          let lastPageviewPath;
+          window.gatsbyPluginSegmentPageviewCaller = function () {
+            if (!window.analytics) {
+              return;
+            }
+
+            let thisPageviewPath = window.location.pathname;
+            if (thisPageviewPath === lastPageviewPath) {
+              return;
+            }
+            lastPageviewPath = thisPageviewPath;
+            window.analytics.page();
+          };
+        })();
+
+        (function () {
+          var analytics = (window.analytics = window.analytics || []);
+          if (!analytics.initialize)
+            if (analytics.invoked)
+              window.console &&
+                console.error &&
+                console.error("Segment snippet included twice.");
+            else {
+              analytics.invoked = !0;
+              analytics.methods = [
+                "trackSubmit",
+                "trackClick",
+                "trackLink",
+                "trackForm",
+                "pageview",
+                "identify",
+                "reset",
+                "group",
+                "track",
+                "ready",
+                "alias",
+                "debug",
+                "page",
+                "once",
+                "off",
+                "on",
+                "addSourceMiddleware",
+                "addIntegrationMiddleware",
+                "setAnonymousId",
+                "addDestinationMiddleware",
+              ];
+              analytics.factory = function (e) {
+                return function () {
+                  var t = Array.prototype.slice.call(arguments);
+                  t.unshift(e);
+                  analytics.push(t);
+                  return analytics;
+                };
+              };
+              for (var e = 0; e < analytics.methods.length; e++) {
+                var key = analytics.methods[e];
+                analytics[key] = analytics.factory(key);
+              }
+              analytics.load = function (key, e) {
+                var t = document.createElement("script");
+                t.type = "text/javascript";
+                t.async = !0;
+                t.src =
+                  "https://cdn.segment.io/analytics.js/v1/" +
+                  key +
+                  "/analytics.min.js";
+                var n = document.getElementsByTagName("script")[0];
+                n.parentNode.insertBefore(t, n);
+                analytics._loadOptions = e;
+              };
+              analytics._writeKey = "GdOxo9TxEImFZ34Ua4EgA8vDbOPXz3gX";
+              analytics.SNIPPET_VERSION = "4.15.3";
+            }
+        })();
+      })();
+    </script>
     <title data-react-helmet="true">
       Dcluttr - Your AI-powered growth marketer
     </title>
@@ -726,8 +808,8 @@
                 ><a
                   class="e1nlu3wg0 css-1mqqp0i"
                   tabindex="0"
-                  href="#firstparty_data"
-                  >First-party data</a
+                  href="#advanced_reporting"
+                  >Advanced reporting</a
                 >
               </div>
             </div>
@@ -1410,7 +1492,7 @@
                         }
                         @media (max-width: 799px) {
                           .css-t8oiwf {
-                            font-size: 39px;
+                            font-size: 41px;
                             line-height: 48px;
                           }
                         }
@@ -1439,8 +1521,8 @@
                     <p
                       class="css-1qetn0v en1ds352 animate__animated animate__fadeIn"
                     >
-                      Advertise better with AI-driven actionable insights -
-                      faster than ever before 👑
+                      Advertise better with AI-driven actionable <br />
+                      insights - faster than ever before.
                     </p>
                     <style data-emotion="css 1xg9xgl">
                       .css-1xg9xgl {
@@ -1990,9 +2072,8 @@
                         <p
                           class="css-1np4oz7 en1ds352 animate__animated animate__fadeIn"
                         >
-                          Stop relying on other teams for critical answers.
-                          Dcluttr AI understands your business and is trained on
-                          your data.
+                          Stop relying on people for critical answers.
+                          Dcluttr AI understands your business and is trained to answer difficult questions.
                         </p>
                         <div style="gap: 32px" class="css-1xg9xgl en1ds353">
                           <style data-emotion="css 1q8od6y">
@@ -3145,14 +3226,14 @@
                   </div>
                 </section>
                 <div id="overview" style="position: relative">
-                  <div id="firstparty_data">
+                  <div id="advanced_reporting">
                     <div height="120" class="css-1mnz3a7 exzld8w0"></div>
                     <section class="css-pc0v07 elw78zd6">
                       <div class="css-pf8km5 en1ds356">
                         <div
                           class="css-10pokoy etmo7mj0 animate__animated animate__fadeIn"
                         >
-                          Future-proof and private 🔐
+                          Every insight matters 🤓
                         </div>
                         <a
                           class="css-fkwbqs e1g9gbfq0"
@@ -3182,7 +3263,7 @@
                           <h2
                             class="css-nbt4nl en1ds354 animate__animated animate__fadeIn"
                           >
-                            Unlock the power of first-party data
+                            Advanced reporting
                           </h2></a
                         ><style data-emotion="css 146s3tl">
                           .css-146s3tl {
@@ -3203,9 +3284,7 @@
                         <p
                           class="css-146s3tl en1ds352 animate__animated animate__fadeIn"
                         >
-                          Carefully engineered in-house, our first party pixel
-                          "Bolt" opens the door to countless analytics,
-                          attribution, and actionable insights.
+                          Detailed reports to uncover high impact insights
                         </p>
                         <!-- buttons -->
                         <div style="gap: 32px" class="css-1xg9xgl en1ds353">
@@ -3999,12 +4078,11 @@
                               >
                                 <div class="css-197tvr9 e1g6smbm2">
                                   <h3 class="css-1vni6hm e1g6smbm8">
-                                    Private and Compliant
+                                    Faster than ever before
                                   </h3>
                                 </div>
                                 <p class="css-1rhwgh0 e1g6smbm7">
-                                  Unaffected by privacy changes on iOS, Google,
-                                  Firefox, and other platforms.
+                                  Real-time data with robust pipelines and work streams.
                                 </p>
                               </div>
                             </div>
